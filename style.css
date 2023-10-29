@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Gemunu+Libre&family=Libre+Barcode+128+Text&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gemunu+Libre&family=Libre+Barcode+128+Text&family=Teko:wght@300;400&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #fcf7f8;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Source Serif Pro", Helvetica, sans-serif;
+}
+
+/* 4rem = 40px (4 * 10px) */
+/* h1 {
+  font-size: 2rem;
+} */
+
+/* h2 {
+  font-size: 3.5rem;
+} */
+
+/* h3 {
+  font-size: 3rem;
+}
+
+h4 {
+  font-size: 2.5rem;
+}
+
+h5 {
+  font-size: 2rem;
+}
+
+h6 {
+  font-size: 1.5rem;
+} */
+
+header {
+  width: 96%;
+  margin: 0 auto;
+  padding: 1.2rem;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.name–logo {
+  font-family: "Libre Barcode 128 Text", cursive;
+  text-transform: uppercase;
+  font-size: calc(2.5rem + 2vw);
+  letter-spacing: 0.1px;
+  color: #000;
+  transition: all 0.3s ease-out;
+}
+
+/* header {
+  background-color: #193641;
+} */
+
+.nav–links {
+  font-family: "Teko", sans-serif;
+  font-size: calc(0.6rem + 1vw);
+  cursor: pointer;
+  padding: 0.8rem;
+  transition: all 0.3s ease-out;
+  color: #000;
+}
+
+.nav–links:hover,
+.name–logo:hover {
+  color: #193641;
+}
+nav ul > li {
+  list-style-type: none;
+  display: inline-block;
+  margin-left: 35px;
+}
+
+#resume {
+  color: #cd5c5c;
+}
+
+main {
+  height: 100vh;
+  background-image: url();
+}
