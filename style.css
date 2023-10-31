@@ -128,7 +128,7 @@ h6 {
 }
 
 .main {
-  padding: 50px 180px;
+  padding: 50px 100px;
 }
 
 .info {
@@ -152,10 +152,9 @@ h6 {
 }
 
 #workGrid {
-  /* margin: 0px 5%; */
   display: grid;
-  grid-template-rows: 300px 200px 200px;
-  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 300px 150px 150px;
+  grid-template-columns: 450px 450px;
   grid-template-areas:
     "projectOne projectOne"
     "projectTwo projectThree"
@@ -165,7 +164,6 @@ h6 {
 .work-info-border {
   width: 5px;
   background-color: #193641;
-  height: 100vh;
   margin: 0px 40px 0px 0px;
 }
 
@@ -176,12 +174,30 @@ h6 {
   margin: 5px;
   cursor: pointer;
   display: grid;
-  align-content: end;
+  /* align-content: end; */
+  position: relative;
+  border: 5px solid #193641;
+}
+
+.project-subheading {
+  position: absolute;
+  bottom: 5%;
+  left: 0px;
+  background-color: #007ea7;
+  width: 100px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-subheading h3,
+.project-subheading p {
+  color: #80ced7;
 }
 
 #projectOne {
   grid-area: projectOne;
-  /* min-width: 500px; */
   background-image: url("./asset/images/project1.png");
 }
 
