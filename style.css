@@ -151,6 +151,19 @@ h6 {
   margin: 0px 40px 0px 0px;
 }
 
+.about div {
+  width: 900px;
+}
+
+.about div p {
+  font-size: 24px;
+  font-family: "Source Serif Pro", Helvetica, sans-serif;
+}
+
+.work-grid-container {
+  max-width: 500px;
+}
+
 #workGrid {
   display: grid;
   grid-template-rows: 300px 150px 150px;
@@ -174,9 +187,8 @@ h6 {
   margin: 5px;
   cursor: pointer;
   display: grid;
-  /* align-content: end; */
   position: relative;
-  border: 5px solid #193641;
+  border: 3px solid #193641;
 }
 
 .project-subheading {
@@ -244,4 +256,144 @@ h6 {
   font-family: "Teko", sans-serif;
   letter-spacing: 1.5px;
   cursor: pointer;
+}
+
+/* Media Queries started */
+
+@media only screen and (max-width: 600px) {
+  /* body {
+    width: 100%;
+    height: 100vh;
+  } */
+
+  .nav {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: #193641;
+    width: 100vw;
+  }
+
+  .name–logo {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+  }
+
+  .nav div {
+    font-size: 13px;
+    margin-right: 0px;
+  }
+
+  .nav div ul {
+    margin-left: 0px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .nav div ul li a {
+    color: #fff;
+    font-family: "Teko", sans-serif;
+    letter-spacing: 0.8px;
+    cursor: pointer;
+  }
+
+  .hero {
+    background-position: center top 60%;
+    background-size: contain;
+  }
+
+  .hero-about-me {
+    position: absolute;
+    bottom: 30%;
+    left: 60%;
+    color: #193641;
+  }
+
+  .hero-about-me > h1 {
+    font-size: 1rem;
+  }
+
+  .hero-about-me > p {
+    font-size: 0.6rem;
+  }
+
+  .main {
+    padding: 5px 20px;
+  }
+  .info-header {
+    font-size: 1rem;
+    width: 20px;
+  }
+
+  .about div {
+    width: 60%;
+  }
+
+  .about div p {
+    font-size: 0.8rem;
+    width: 500px;
+  }
+
+  .work-grid-container {
+    max-width: 0px;
+  }
+
+  #workGrid {
+    display: grid;
+    grid-template-rows: 200px 80px 80px;
+    grid-template-columns: 250px 250px;
+    grid-template-areas:
+      "projectOne projectOne"
+      "projectTwo projectThree"
+      "projectFour projectFive";
+  }
+
+  .projectGrid {
+    background-position: center top 20%;
+    background-size: cover;
+    position: relative;
+    border: 3px solid #193641;
+  }
+
+  .project-subheading {
+    width: 65px;
+    height: 30px;
+  }
+
+  .project-subheading h3 {
+    font-size: 12px;
+  }
+
+  .project-subheading p {
+    font-size: 10px;
+  }
+
+  .work-grid-container {
+    min-width: 300px;
+  }
+
+  .work-info-border,
+  .about-info-border {
+    display: none;
+  }
+
+  .contact {
+    padding-top: 25px;
+  }
+
+  .contact div ul {
+    list-style-type: none;
+    display: flex;
+  }
+
+  .contact div ul li {
+    display: inline-block;
+    font-size: 15px;
+  }
+
+  .contact div ul li a {
+    padding-left: 30px;
+  }
 }
