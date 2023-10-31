@@ -12,7 +12,8 @@ html {
 }
 
 body {
-  background-color: #fcf7f8;
+  /* background-color: #f4f4f9; */
+  background-color: #f0edee;
 }
 
 a:hover {
@@ -29,9 +30,9 @@ h6 {
 }
 
 /* 4rem = 40px (4 * 10px) */
-/* h1 {
-  font-size: 2rem;
-} */
+h1 {
+  font-size: 2.2rem;
+}
 
 /* h2 {
   font-size: 3.5rem;
@@ -53,52 +54,178 @@ h6 {
   font-size: 1.5rem;
 } */
 
-header {
-  width: 96%;
-  margin: 0 auto;
-  padding: 1.2rem;
-  text-align: center;
-  display: flex;
-  justify-content: space-between;
+.nav {
+  padding: 25px;
+  background-color: transparent;
 }
 
 .name–logo {
   font-family: "Libre Barcode 128 Text", cursive;
   text-transform: uppercase;
-  font-size: calc(2.5rem + 2vw);
+  font-size: 52px;
   letter-spacing: 0.1px;
-  color: #000;
-  transition: all 0.3s ease-out;
+  color: #193641;
+  display: inline-block;
 }
 
-/* header {
-  background-color: #193641;
-} */
+.nav div {
+  padding-top: 10px;
+  margin-right: 20px;
+  float: right;
+  font-size: 22px;
+}
 
-.nav–links {
+.nav div ul {
+  list-style-type: none;
+}
+
+.nav div ul li {
+  display: inline-block;
+  margin-left: 30px;
+}
+
+.nav div ul li a {
+  color: #193641;
   font-family: "Teko", sans-serif;
-  font-size: calc(0.6rem + 1vw);
+  letter-spacing: 1.5px;
   cursor: pointer;
-  padding: 0.8rem;
-  transition: all 0.3s ease-out;
-  color: #000;
 }
 
 .nav–links:hover,
 .name–logo:hover {
-  color: #193641;
-}
-nav ul > li {
-  list-style-type: none;
-  display: inline-block;
-  margin-left: 35px;
+  /* color: #193641; */
 }
 
-#resume {
+#resume–link {
   color: #cd5c5c;
 }
 
-main {
+.hero {
   height: 100vh;
-  background-image: url();
+  width: 100%;
+  background-image: url("./asset/images/hero.jpeg");
+  background-repeat: no-repeat;
+  background-position: center top 60%;
+  background-size: cover;
+  z-index: 1;
+}
+
+.hero-about-me {
+  position: absolute;
+  bottom: 20%;
+  left: 65%;
+  color: #193641;
+}
+
+.hero-about-me > h1 {
+  font-size: 3.2rem;
+  letter-spacing: 0.8px;
+  font-family: "Source Serif Pro", Helvetica, sans-serif;
+}
+
+.hero-about-me > p {
+  font-size: 1.3rem;
+}
+
+.main {
+  padding: 50px 180px;
+}
+
+.info {
+  display: flex;
+}
+
+.info-header {
+  width: 100px;
+  color: #193641;
+  margin-right: 30px;
+}
+.work {
+  padding-top: 50px;
+}
+
+.about-info-border {
+  width: 5px;
+  background-color: #193641;
+  height: 150px;
+  margin: 0px 40px 0px 0px;
+}
+
+#workGrid {
+  /* margin: 0px 5%; */
+  display: grid;
+  grid-template-rows: 300px 200px 200px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "projectOne projectOne"
+    "projectTwo projectThree"
+    "projectFour projectFive";
+}
+
+.work-info-border {
+  width: 5px;
+  background-color: #193641;
+  height: 100vh;
+  margin: 0px 40px 0px 0px;
+}
+
+.projectGrid {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 5px;
+  cursor: pointer;
+  display: grid;
+  align-content: end;
+}
+
+#projectOne {
+  grid-area: projectOne;
+  /* min-width: 500px; */
+  background-image: url("./asset/images/project1.png");
+}
+
+#projectTwo {
+  grid-area: projectTwo;
+  background-image: url("./asset/images/project2.png");
+}
+
+#projectThree {
+  grid-area: projectThree;
+  background-image: url("./asset/images/project3.jpg");
+}
+
+#projectFour {
+  grid-area: projectFour;
+  background-image: url("./asset/images/project4.jpg");
+}
+
+#projectFive {
+  grid-area: projectFive;
+  background-image: url("./asset/images/project5.jpg");
+}
+
+.contact {
+  padding-top: 50px;
+}
+
+.contact div ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+.contact div ul li {
+  display: inline-block;
+  /* margin-left: 0px; */
+  font-size: 2rem;
+}
+
+.contact div ul li a {
+  padding-left: 40px;
+  margin-right: 5px;
+  color: #193641;
+  font-family: "Teko", sans-serif;
+  letter-spacing: 1.5px;
+  cursor: pointer;
 }
