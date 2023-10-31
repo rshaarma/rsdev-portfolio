@@ -1,6 +1,6 @@
 <br />
 <p align="center">
-  <a href="https://github.com/rshaarma/horiseon-solutions">
+  <a href=" https://rshaarma.github.io/rsdev-portfolio/">
   <img width="265" alt="Screenshot 2023-10-31 at 18 28 55" src="https://github.com/rshaarma/rsdev-portfolio/assets/64362564/7bfd0c03-0a8f-498b-9425-233e5360c286">
   </a>
 
@@ -73,7 +73,7 @@ cd project
 
 ## Roadmap
 
-See the [open issues]() for a list of proposed features (and known issues).
+See the [open issues](https://github.com/rshaarma/rsdev-portfolio/issues) for a list of proposed features (and known issues).
 
 <!-- CONTRIBUTING -->
 
