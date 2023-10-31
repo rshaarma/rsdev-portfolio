@@ -8,11 +8,10 @@
 }
 
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: smooth; /* setting up smooth window scroll*/
 }
 
 body {
-  /* background-color: #f4f4f9; */
   background-color: #f0edee;
 }
 
@@ -34,36 +33,17 @@ h1 {
   font-size: 2.2rem;
 }
 
-/* h2 {
-  font-size: 3.5rem;
-} */
-
-/* h3 {
-  font-size: 3rem;
-}
-
-h4 {
-  font-size: 2.5rem;
-}
-
-h5 {
-  font-size: 2rem;
-}
-
-h6 {
-  font-size: 1.5rem;
-} */
-
+/* Navbar style start */
 .nav {
   padding: 25px;
-  background-color: transparent;
+  background-color: transparent; /* set the background transparent*/
 }
 
 .name–logo {
   font-family: "Libre Barcode 128 Text", cursive;
   text-transform: uppercase;
   font-size: 52px;
-  letter-spacing: 0.1px;
+  letter-spacing: 0.1px; /*set up the spacing between the letters*/
   color: #193641;
   display: inline-block;
 }
@@ -91,25 +71,23 @@ h6 {
   cursor: pointer;
 }
 
-.nav–links:hover,
-.name–logo:hover {
-  /* color: #193641; */
-}
-
 #resume–link {
   color: #cd5c5c;
 }
 
+/* Navbar style end */
+
 .hero {
-  height: 100vh;
+  height: 100vh; /* set the virtual height to 100vh*/
   width: 100%;
   background-image: url("./asset/images/hero.jpeg");
   background-repeat: no-repeat;
   background-position: center top 60%;
-  background-size: cover;
+  background-size: cover; /* set the background size to cover*/
   z-index: 1;
 }
 
+/* stylying sub-heading styles */
 .hero-about-me {
   position: absolute;
   bottom: 20%;
@@ -127,8 +105,10 @@ h6 {
   font-size: 1.3rem;
 }
 
+/* styling for section starts */
+
 .main {
-  padding: 50px 100px;
+  padding: 50px 100px; /* set the top, bottom sides to 50px and 100px to left and right sides*/
 }
 
 .info {
@@ -161,7 +141,7 @@ h6 {
 }
 
 .work-grid-container {
-  max-width: 500px;
+  max-width: 500px; /* set the max-width to 500px*/
 }
 
 #workGrid {
@@ -181,12 +161,12 @@ h6 {
 }
 
 .projectGrid {
-  background-position: center;
+  background-position: center; /* set the background position to center*/
   background-size: cover;
   background-repeat: no-repeat;
   margin: 5px;
   cursor: pointer;
-  display: grid;
+  display: grid; /* set the display to grid*/
   position: relative;
   border: 3px solid #193641;
 }
@@ -257,6 +237,8 @@ h6 {
   letter-spacing: 1.5px;
   cursor: pointer;
 }
+
+/* styling for section ends */
 
 /* Media Queries started */
 
@@ -397,3 +379,5 @@ h6 {
     padding-left: 30px;
   }
 }
+
+/*  Media queries ends */
