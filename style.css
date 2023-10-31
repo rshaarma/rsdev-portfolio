@@ -80,11 +80,11 @@ h1 {
 .hero {
   height: 100vh; /* set the virtual height to 100vh*/
   width: 100%;
-  background-image: url("./asset/images/hero.jpeg");
+  background: url("./asset/images/hero.jpeg");
   background-repeat: no-repeat;
   background-position: center top 60%;
   background-size: cover; /* set the background size to cover*/
-  z-index: 1;
+  /* z-index: 1; */
 }
 
 /* stylying sub-heading styles */
@@ -169,6 +169,7 @@ h1 {
   display: grid; /* set the display to grid*/
   position: relative;
   border: 3px solid #193641;
+  /* opacity: 0.8; */
 }
 
 .project-subheading {
@@ -225,7 +226,6 @@ h1 {
 
 .contact div ul li {
   display: inline-block;
-  /* margin-left: 0px; */
   font-size: 2rem;
 }
 
@@ -243,11 +243,6 @@ h1 {
 /* Media Queries started */
 
 @media only screen and (max-width: 600px) {
-  /* body {
-    width: 100%;
-    height: 100vh;
-  } */
-
   .nav {
     padding: 10px;
     display: flex;
