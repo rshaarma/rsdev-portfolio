@@ -8,7 +8,7 @@
 
   <p align="center">
     <strong>Explore the docs »</strong>
-    <a href="https://github.com/rshaarma/rsdev-portfolio/issues">View Demo</a>
+    <a href="https://rshaarma.github.io/rsdev-portfolio/">View Demo</a>
     ·
     <a href="https://github.com/rshaarma/rsdev-portfolio/issues">Report Bug</a>
     ·
